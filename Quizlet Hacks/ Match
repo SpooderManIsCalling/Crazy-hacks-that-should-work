@@ -1,6 +1,6 @@
 // this script automatically solves the match and puts you on the leaderboard
 // with a time that YOU get to select (it could even be 1 second)
-// but try not to go lower than 1 second because the quizlet website detects un humanly speeds
+// but try not to go lower than 1 second because the quizlet website detects unhumanly speeds
 
 (() => {
     const encodeData = (data) => {
