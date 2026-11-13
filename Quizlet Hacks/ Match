@@ -1,5 +1,6 @@
 // this script automatically solves the match and puts you on the leaderboard
 // with a time that YOU get to select (it could even be 1 second)
+// but try not to go lower than 1 second because the quizlet website detects un humanly speeds
 
 (() => {
     const encodeData = (data) => {
@@ -19,7 +20,7 @@
         return parseInt(s + '0', 10);
     };
 
-    let inputNum = prompt('what do you want your match time to be? enter in the format "5.1":');
+    let inputNum = prompt('what do you want your time to be"you should probably do above 1 second" "2.8":');
     if (isNaN(inputNum)) alert('uhh might be wrong but that doesn\'t look very numberlike');
     if (inputNum.includes('.') && ((inputNum.indexOf('.') + 2) !== inputNum.length)) alert('scores cannot have more than one decimal place');
 
